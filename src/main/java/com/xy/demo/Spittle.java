@@ -1,5 +1,6 @@
 package com.xy.demo;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class Spittle {
@@ -22,22 +23,27 @@ public class Spittle {
         this.longtitude = longtitude;
     }
 
+    @NotNull
     public long getId() {
         return id;
     }
 
+    @NotNull
     public String getMessage() {
         return message;
     }
 
+    @NotNull
     public Date getDate() {
         return date;
     }
 
+    @NotNull
     public Double getLatitude() {
         return latitude;
     }
 
+    @NotNull
     public Double getLongtitude() {
         return longtitude;
     }
